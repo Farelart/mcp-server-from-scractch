@@ -48,7 +48,7 @@ async def fetch_url(url: str):
         except httpx.TimeoutException:
             return "Timeout error"
 
-@mcp.tool
+@mcp.tool()
 async def get_docs(query: str, library: str) -> str:
     """
      Search the docs for a given query and library.
